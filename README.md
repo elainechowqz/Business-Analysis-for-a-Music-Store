@@ -1,2 +1,2 @@
-# Business Intelligence for a Digital Music Store
+# Business Intelligence for a Music Store
 Several SQL projects for various business questions related to a digital music store, based on the Chinook database
