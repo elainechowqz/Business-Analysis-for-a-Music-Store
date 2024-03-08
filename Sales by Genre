@@ -1,0 +1,27 @@
+/*  Selecting Albums to Purchase
+	Write a query that returns each genre, with the number of tracks sold in the USA:
+        in absolute numbers
+        in percentages.
+    Write a paragraph that interprets the data and makes a recommendation for the three artists whose albums we should purchase for the store, based on sales of tracks from their genres. */
+
+CREATE TABLE GenreSales AS
+
+/* define CTE */
+WITH TotalQuantity AS (
+	SELECT SUM(quantity)*1.0 AS total_quantity FROM invoice_line
+)
+
+/* Replace Null values with Zero */
+SELECT genre_name, 
+       IFNULL(sales_number, 0) AS sales_number, 
+       IFNULL(sales_percentage, 0) AS sales_percentage
+FROM (
+	  /* calculate the number of tracks sold and percentages for each genre: */
+	  SELECT genre.name AS genre_name, sum(invoice_line.quantity) AS sales_number, 
+             sum(invoice_line.quantity)/ (SELECT total_quantity FROM TotalQuantity) * 100 AS sales_percentage
+	  FROM genre
+	  LEFT JOIN track USING(genre_id)
+	  LEFT JOIN invoice_line USING(track_id)
+	  GROUP BY genre.name
+	  ORDER BY sales_number DESC
+)
