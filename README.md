@@ -1,5 +1,6 @@
 # SQL Data Analysis and Business Intelligence for a Music Store
 Several SQL projects for various business questions related to a digital music store, with visualizations
+
 SQL data analysis ---> actionable business insights (related to customers, markets, employee performance, and various products, etc.)
 
 ## Overview
