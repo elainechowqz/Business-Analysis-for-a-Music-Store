@@ -19,7 +19,7 @@ In this project, I analyze the sales results of different music genres within th
 
 ![Genre vs Sales Values](<visualization_sales percentages by genre.pdf>)
 
-### 2. Customer Segmentation and Employee Performance
+### 2. Markets and Employee Performance via Customer Segmentation
 This project is divided into two parts, as outlined below. For more details on this two-part project, see the SQL file "Sales and Employee Performance by Country". 
 
 **2.1 Customer Segmentation by Country:**  
