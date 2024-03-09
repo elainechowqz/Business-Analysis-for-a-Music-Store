@@ -1,7 +1,7 @@
 # SQL Data Analysis and Business Intelligence for a Music Store
 Several SQL projects for various business questions related to a digital music store, with visualizations
 
-SQL data analysis ---> actionable business insights (related to customers, markets, employee performance, and various products, etc.)
+SQL data analysis ---> actionable business insights (related to customers, markets, employee performance, inventory and various products, etc.)
 
 ## Overview
 These are my SQL projects based on the Chinook database, a database for a music store (database schema below). They are modified or generalized from the final projects for the "Intermediate SQL for Data Analysis" course provided by DataQuest. Below, you will find a brief overview of each project.
