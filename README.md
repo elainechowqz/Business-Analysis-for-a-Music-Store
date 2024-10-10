@@ -42,6 +42,6 @@ The performances of sales representatives are first evaluated in general. Then w
 The most complex of the three, this project involves determining the percentage of invoices that contain purchases of entire albums versus individual tracks. This analysis is crucial for making informed business decisions regarding inventory management. For more details on this project, see the SQL file "Business Decision - Albums vs Individual Tracks". 
 
 **Insights:**  
-- Insights on customer buying patterns.
+- Insights on purchasing patterns.
 - Recommendations on whether to focus on selling more albums or individual tracks.
 
